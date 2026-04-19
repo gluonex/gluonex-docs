@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1776569144.00063 "c:/Dev/gluonex-docs/landing-page/main.tex" "main.pdf" "main" 1776569145.74908 0
-  "c:/Dev/gluonex-docs/landing-page/main.tex" 1776569143 5091 3797cca88162308da4bd9302bfbcc57b ""
+["pdflatex"] 1776620306.762 "c:/Dev/gluonex-docs/landing-page/main.tex" "main.pdf" "main" 1776620308.55037 0
+  "c:/Dev/gluonex-docs/landing-page/main.tex" 1776620305 5077 92b8b87e608b30567506ef6435d44e60 ""
   "c:/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc" 1768290151 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "c:/texlive/2025/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free0.enc" 1768290341 3083 a707712f77b073b3833e4b1334a30e99 ""
   "c:/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1768290345 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -156,10 +156,10 @@
   "c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1768292242 5512713 d5293fe2524c042fff1d1aaaba621917 ""
   "c:/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1768292563 3346130 712f3cb080cd0d2dc329f1aa87e440ef ""
   "c:/texlive/2025/texmf.cnf" 1768292215 713 e69b156964470283e0530f5060668171 ""
-  "logo.png" 1776568990 79857 b9c82947857556cc42469d8c12164e4b ""
-  "main.aux" 1776569145 362 fb9ef3066c03621f25b72007a52bd41a "pdflatex"
-  "main.out" 1776569145 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main.tex" 1776569143 5091 3797cca88162308da4bd9302bfbcc57b ""
+  "logo.png" 1776620050 79857 b9c82947857556cc42469d8c12164e4b ""
+  "main.aux" 1776620308 362 fb9ef3066c03621f25b72007a52bd41a "pdflatex"
+  "main.out" 1776620308 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.tex" 1776620305 5077 92b8b87e608b30567506ef6435d44e60 ""
   (generated)
   "main.aux"
   "main.log"
