@@ -1,4 +1,4 @@
-\documentclass[11pt,a4paper]{article}
+\documentclass[11pt, a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
 \usepackage[margin=2cm]{geometry}
@@ -8,14 +8,24 @@
 \usepackage{fontawesome5}
 \usepackage{enumitem}
 \usepackage{hyperref}
-\usepackage{charter} % Fuente elegante y moderna
+\usepackage{charter}
+\usepackage{multicol}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{ragged2e}
+\usepackage{parskip}
 
-% --- Paleta de Colores ---
+% --- Paleta de Colores GluonEX ---
 \definecolor{mainblue}{HTML}{0070f3}
 \definecolor{darkslate}{HTML}{0f172a}
 \definecolor{lightslate}{HTML}{f8fafc}
 \definecolor{accentblue}{HTML}{3b82f6}
 \definecolor{bordergray}{HTML}{e2e8f0}
+\definecolor{basicgray}{HTML}{475569}
+\definecolor{lightblue}{HTML}{eff6ff}
+\definecolor{successgreen}{HTML}{10b981}
+\definecolor{warmgray}{HTML}{78716c}
+\definecolor{offwhite}{HTML}{fafaf9}
 
 % --- Configuración de Títulos ---
 \titleformat{\section}{\color{darkslate}\normalfont\Large\bfseries}{}{0em}{}[\titlerule]
@@ -23,110 +33,463 @@
 
 % --- Estilo de Página ---
 \pagestyle{empty}
+\setlength{\parindent}{0pt}
 
 \begin{document}
-
-% --- Header ---
-\begin{center}
-    \includegraphics[width=0.3\textwidth]{logo.png}
+  % =============================================
+  % HEADER
+  % =============================================
+  \begin{center}
+    \includegraphics[width=0.25\textwidth]{logo.png}
 
     \vspace{2mm}
 
-    {\color{gray} Desarrollo de Software \& Soluciones Digitales}
+    {\color{gray}\small Desarrollo de Software \& Soluciones Digitales}
 
-    \vspace{4mm}
-    \rule{\textwidth}{0.5pt}
-\end{center}
+    \vspace{2mm}
 
-\vspace{1cm}
+    {\color{darkslate}\normalsize\textbf{TU PÁGINA WEB, PUBLICADA.}}
 
-% --- Intro ---
-\noindent Estimado(a) Cliente, \\
-Gracias por cotizar con nosotros. En \textbf{GluonEX} no solo creamos sitios web, construimos herramientas de crecimiento para tu negocio. A continuación, presentamos nuestra propuesta premium para el desarrollo de su Landing Page profesional.
+    {\color{gray}\small Sin promesas vacías. Sin letra chica.}
+  \end{center}
 
-\vspace{1cm}
+  \vspace{3mm}
+  \begin{center}
+    \rule{0.6\textwidth}{0.5pt}
+  \end{center}
 
-% --- Desarrollo Section ---
-\begin{tcolorbox}[colback=darkslate, colframe=darkslate, arc=4mm, boxrule=0.5pt, left=6mm, right=6mm, top=6mm, bottom=6mm]
+  \vspace{5mm}
+
+  % =============================================
+  % HERO / INTRO
+  % =============================================
+  \noindent
+  \begin{tcolorbox}
+    [colback=darkslate, colframe=darkslate, arc=3mm, boxrule=0pt, left=8mm, right=8mm,
+    top=6mm, bottom=6mm]
     \color{white}
     \begin{center}
-        {\LARGE \textbf{Desarrollo de Landing Page Premium}} \\
-        \vspace{2mm}
-        {\Large \textbf{\$249.990 + IVA}} \\
-        \vspace{1mm}
-        {\small (\$297.488 Total con IVA)}
+      {\Large\bfseries Tu página web, publicada.} \\[3mm] {\small Un equipo de diseño, un sitio terminado. Confirmas, construimos, publicamos.}
+      \\ {\small Sin reuniones eternas. Sin cotizaciones infinitas. Sin sorpresas.}
     \end{center}
-\end{tcolorbox}
+  \end{tcolorbox}
 
-\vspace{5mm}
+  \vspace{6mm}
 
-\begin{itemize}[label=\color{mainblue}\faCheckCircle, leftmargin=*, itemsep=4pt]
-    \item \textbf{Diseño Único y Atractivo:} Interfaz moderna y personalizada. No usamos plantillas recicladas; cada diseño se crea desde cero para transmitir el profesionalismo de tu marca.
-    \item \textbf{Velocidad y Rendimiento Perfecto:} Desarrollada con tecnología de última generación para priorizar una carga instantánea en cualquier dispositivo (celular, tablet o PC).
-    \item \textbf{Estructura One-Page Estratégica:} Diseño fluido donde el cliente encuentra todo lo que necesita deslizando: bienvenida, servicios, testimonios y contacto.
-    \item \textbf{Conexión Directa:} Botón de WhatsApp flotante y formulario de contacto para recibir información desde el primer mensaje.
-    \item \textbf{Preparada para Google (SEO Básico):} Configuración técnica interna para que los buscadores reconozcan tu negocio desde el primer día.
-    \item \textbf{Medición y Analítica:} Conexión con Google Analytics para medir visitas y optimizar futuras campañas publicitarias.
-    \item \textbf{Gestión de Dominio:} Incluimos el registro de tu dominio propio .CL por el primer año.
-\end{itemize}
+  % --- Métricas Rápidas ---
+  \noindent
+  \begin{minipage}[t]{0.23\textwidth}
+    \begin{center}
+      {\color{mainblue}\Large\bfseries 7--10} \\ {\color{basicgray}\small días hábiles}
+      \\ {\footnotesize\color{warmgray} de ejecución}
+    \end{center}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[t]{0.23\textwidth}
+    \begin{center}
+      {\color{mainblue}\Large\bfseries 100\%} \\ {\color{basicgray}\small código fuente}
+      \\ {\footnotesize\color{warmgray} tuyo, sin amarres}
+    \end{center}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[t]{0.23\textwidth}
+    \begin{center}
+      {\color{mainblue}\Large\bfseries \$0} \\ {\color{basicgray}\small hosting mensual}
+      \\ {\footnotesize\color{warmgray} Cloudflare Pages / Netlify}
+    \end{center}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[t]{0.23\textwidth}
+    \begin{center}
+      {\color{mainblue}\Large\bfseries 100\%} \\ {\color{basicgray}\small SEO técnico}
+      \\ {\footnotesize\color{warmgray} integrado}
+    \end{center}
+  \end{minipage}
 
-\vspace{1cm}
+  \vspace{8mm}
 
-\newpage
+  % =============================================
+  % PRECIO
+  % =============================================
+  \begin{tcolorbox}
+    [colback=lightblue, colframe=mainblue, arc=3mm, boxrule=1pt, left=8mm, right=8mm,
+    top=5mm, bottom=5mm]
+    \color{darkslate}
+    \begin{minipage}[t]{0.6\textwidth}
+      {\Large\bfseries Plan Landing Page GluonEX} \\[2mm] {\small\textit{Desarrollo a medida con código moderno.}}
+      \\[1mm] {\small\textit{Sin constructores lentos. Sin plantillas recicladas.}}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.4\textwidth}
+      \begin{flushright}
+        {\color{basicgray}\small CLP} \\ {\Huge\bfseries\color{darkslate}\$119.990}
+        \\[1mm] {\small\color{basicgray}+ IVA (19\%) · \$23.798} \\ {\small\color{darkslate}\textbf{Total: \$143.788}}
+        \\ {\footnotesize\color{warmgray}pago único · sin mantenciones · código tuyo}
+      \end{flushright}
+    \end{minipage}
+  \end{tcolorbox}
 
-% --- Mantenimiento Section ---
-\section*{Planes de Mantenimiento y Soporte}
-\noindent Asegura la continuidad y seguridad de tu presencia digital con nuestros planes mensuales:
+  \vspace{4mm}
 
-\vspace{5mm}
+  % =============================================
+  % CARACTERÍSTICAS INCLUIDAS
+  % =============================================
+  \noindent
+  \begin{minipage}[t]{0.48\textwidth}
+    \begin{itemize}[label=
+    \color{mainblue}
+    \faCheckCircle, leftmargin=*, itemsep=3pt]
+      \item \textbf{Diseño a medida (no plantilla)} \\[1mm]
+        {\small\color{basicgray}Interfaz única construida para tu marca. Nada de plantillas recicladas.}
 
-\begin{minipage}[t]{0.48\textwidth}
-    \begin{tcolorbox}[colback=lightslate, colframe=bordergray, title=\color{darkslate}\textbf{Plan Respaldo}, arc=3mm]
-        \color{darkslate}
-        \begin{center}
-            {\large \textbf{\$14.990 + IVA}} \\
-            {\footnotesize (\$17.838 Total con IVA)} \\
-            \vspace{1mm}
-            \textit{Mensual}
-        \end{center}
-        \vspace{2mm}
-        \small
-        \begin{itemize}[leftmargin=*, label=\color{gray}\tiny\faCircle]
-            \item Alojamiento (Hosting) de alta velocidad.
-            \item Certificado de seguridad SSL (Candado).
-            \item Monitoreo técnico 24/7.
-            \item Soporte ante caídas.
-        \end{itemize}
+      \item \textbf{Hasta 6 secciones / 1 página} \\[1mm]
+        {\small\color{basicgray}Estructura one-page estratégica con navegación fluida.}
+
+      \item \textbf{Dominio .cl por 1 año} \\[1mm]
+        {\small\color{basicgray}Registramos tu dominio. Queda a tu nombre desde el día 1.}
+
+      \item \textbf{Hosting gratis en Cloudflare Pages / Netlify} \\[1mm]
+        {\small\color{basicgray}Desplegamos en su capa gratuita. CDN global, SSL, 0 costo mensual.}
+
+      \item \textbf{Integración WhatsApp / Forms / Analytics} \\[1mm]
+        {\small\color{basicgray}Botón flotante, formulario de contacto, Google Analytics, Maps.}
+    \end{itemize}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[t]{0.48\textwidth}
+    \begin{itemize}[label=
+    \color{mainblue}
+    \faCheckCircle, leftmargin=*, itemsep=3pt]
+      \item \textbf{SEO técnico completo} \\[1mm]
+        {\small\color{basicgray}Meta tags, datos estructurados, sitemap, robots, Open Graph.}
+
+      \item \textbf{Pixel de Meta (si lo necesitas)} \\[1mm]
+        {\small\color{basicgray}Integración con Facebook/Instagram Ads para medición.}
+
+      \item \textbf{Código fuente 100\% tuyo} \\[1mm]
+        {\small\color{basicgray}Entregamos \textbf{TODO} el código. Puedes cambiar de proveedor cuando quieras.}
+
+      \item \textbf{Revisiones hasta que estés conforme} \\[1mm]
+        {\small\color{basicgray}No cerramos el proyecto hasta que digas ``está perfecto''.}
+    \end{itemize}
+  \end{minipage}
+
+  \vspace{6mm}
+
+  % =============================================
+  % NUESTRA FILOSOFÍA
+  % =============================================
+  \section*{Nuestra Filosofía}
+
+  \noindent
+  \begin{tcolorbox}
+    [colback=offwhite, colframe=bordergray, arc=2mm, boxrule=0.5pt, left=6mm,
+    right=6mm, top=4mm, bottom=4mm] {\color{darkslate}\small ``Creemos que una página web no debería amarrarte con mantenciones obligatorias. Pagas una vez, recibes tu código, y la página es tuya para siempre. Sin dependencia. Sin sorpresas.''}
+
+    \vspace{2mm}
+    \begin{flushright}
+      {\color{warmgray}\small — Equipo de diseño, GluonEX}
+    \end{flushright}
+  \end{tcolorbox}
+
+  \vspace{6mm}
+
+  % =============================================
+  % LAS TRES REGLAS
+  % =============================================
+  \section*{Las Tres Reglas. Sin Excepciones.}
+
+  \vspace{2mm}
+
+  \noindent
+  \begin{minipage}[t]{0.31\textwidth}
+    \begin{tcolorbox}
+      [colback=lightslate, colframe=bordergray, arc=2mm, boxrule=0.5pt, left=4mm,
+      right=4mm, top=4mm, bottom=4mm]
+      \color{darkslate}
+      \begin{center}
+        {\color{mainblue}\LARGE\bfseries 01} \\[2mm] {\small\bfseries Calidad sobre velocidad}
+        \\[2mm] {\footnotesize\color{basicgray}No prometemos ``para hoy''. Prometemos que cuando entregue, va a estar perfecto. Cada pixel, cada línea de código, cada palabra.}
+      \end{center}
     \end{tcolorbox}
-\end{minipage}
-\hfill
-\begin{minipage}[t]{0.48\textwidth}
-    \begin{tcolorbox}[colback=mainblue!5, colframe=mainblue, title=\color{mainblue}\textcolor{white}{\textbf{Plan Soporte Pro}}, arc=3mm]
-        \color{darkslate}
-        \begin{center}
-            {\large \textbf{\$24.990 + IVA}} \\
-            {\footnotesize (\$29.738 Total con IVA)} \\
-            \vspace{1mm}
-            \textit{Mensual}
-        \end{center}
-        \vspace{2mm}
-        \small
-        \begin{itemize}[leftmargin=*, label=\color{mainblue}\tiny\faCircle]
-            \item Todo lo del Plan Respaldo.
-            \item Actualizaciones de contenido.
-            \item Cambio de banners y textos.
-            \item Soporte prioritario vía WhatsApp.
-        \end{itemize}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[t]{0.31\textwidth}
+    \begin{tcolorbox}
+      [colback=lightslate, colframe=bordergray, arc=2mm, boxrule=0.5pt, left=4mm,
+      right=4mm, top=4mm, bottom=4mm]
+      \color{darkslate}
+      \begin{center}
+        {\color{mainblue}\LARGE\bfseries 02} \\[2mm] {\small\bfseries Revisiones sin límite}
+        \\[2mm] {\footnotesize\color{basicgray}Hacemos cambios hasta que estés conforme. No cobramos extra por iteraciones. Tu satisfacción es el cierre del proyecto.}
+      \end{center}
     \end{tcolorbox}
-\end{minipage}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[t]{0.31\textwidth}
+    \begin{tcolorbox}
+      [colback=lightslate, colframe=bordergray, arc=2mm, boxrule=0.5pt, left=4mm,
+      right=4mm, top=4mm, bottom=4mm]
+      \color{darkslate}
+      \begin{center}
+        {\color{mainblue}\LARGE\bfseries 03} \\[2mm] {\small\bfseries Transparencia total}
+        \\[2mm] {\footnotesize\color{basicgray}No buscamos persuadirte. Presupuesto cerrado. Sin costos ocultos. Sin letras chicas. Sabes exactamente qué pagas y qué recibes.}
+      \end{center}
+    \end{tcolorbox}
+  \end{minipage}
 
-\vfill
+  \vspace{8mm}
 
-% --- Footer ---
-\begin{center}
+  % =============================================
+  % QUÉ INCLUYE (DETALLADO)
+  % =============================================
+  \section*{Todo Incluido. Sin Letra Chica.}
+
+  \vspace{2mm}
+
+  \noindent
+  \begin{minipage}[t]{0.48\textwidth}
+    \textbf{\color{darkslate}
+    i. Diseño a medida} \\[1mm]
+    {\small\color{basicgray}Una propuesta única construida para tu marca. Nada de plantillas recicladas.}
+
+    \vspace{3mm}
+
+    \textbf{\color{darkslate}
+    ii. Desarrollo en código moderno} \\[1mm] {\small\color{basicgray}Sitios estáticos, livianos, que cargan en milisegundos. Accesibilidad AA.}
+
+    \vspace{3mm}
+
+    \textbf{\color{darkslate}
+    iii. Estrategia SEO técnica} \\[1mm]
+    {\small\color{basicgray}Meta tags, datos estructurados, sitemap, robots, Open Graph y velocidad asegurada.}
+
+    \vspace{3mm}
+
+    \textbf{\color{darkslate}
+    iv. Dominio y SSL} \\[1mm] {\small\color{basicgray}Tu dominio .cl (o internacional) registrado y con certificado SSL activo.}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[t]{0.48\textwidth}
+    \textbf{\color{darkslate}
+    v. Hosting gratuito (Cloudflare Pages / Netlify)} \\[1mm]
+    {\small\color{basicgray}Desplegamos en la capa gratuita del proveedor que elijas. CDN global, SSL, 0 costo mensual.}
+
+    \vspace{3mm}
+
+    \textbf{\color{darkslate}
+    vi. Código fuente entregado} \\[1mm] {\small\color{basicgray}Recibes el código completo. Puedes editarlo tú mismo, contratar a otro desarrollador o migrar de proveedor cuando quieras.}
+
+    \vspace{3mm}
+
+    \textbf{\color{darkslate}
+    vii. Integraciones básicas} \\[1mm]
+    {\small\color{basicgray}WhatsApp, formularios, Google Analytics, Maps y pixel de Meta si lo necesitas.}
+
+    \vspace{3mm}
+
+    \textbf{\color{darkslate}
+    viii. Contenido optimizado} \\[1mm] {\small\color{basicgray}Ajustamos tus textos para copy persuasivo y palabras clave relevantes.}
+  \end{minipage}
+
+  \vspace{8mm}
+
+  % =============================================
+  % EL PROCESO
+  % =============================================
+  \section*{El Proceso. De la Confirmación a la Entrega.}
+
+  \vspace{2mm}
+
+  \noindent
+  \begin{minipage}[t]{0.15\textwidth}
+    \begin{center}
+      \textbf{\color{mainblue}
+      01} \\[2mm] {\small\bfseries Kickoff} \\[1mm]
+      {\footnotesize\color{basicgray}Nos cuentas qué haces, qué quieres transmitir y a quién le hablas.}
+    \end{center}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[t]{0.15\textwidth}
+    \begin{center}
+      \textbf{\color{mainblue}
+      02} \\[2mm] {\small\bfseries Dirección creativa} \\[1mm]
+      {\footnotesize\color{basicgray}Elegimos tipografías, paleta y tono. Te mostramos un moodboard.}
+    \end{center}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[t]{0.15\textwidth}
+    \begin{center}
+      \textbf{\color{mainblue}
+      03} \\[2mm] {\small\bfseries Diseño en vivo} \\[1mm]
+      {\footnotesize\color{basicgray}Ves el avance en un enlace privado. Comentas, ajustamos, avanzamos.}
+    \end{center}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[t]{0.15\textwidth}
+    \begin{center}
+      \textbf{\color{mainblue}
+      04} \\[2mm] {\small\bfseries Desarrollo + SEO} \\[1mm]
+      {\footnotesize\color{basicgray}Código limpio, rápido, con toda la capa de SEO técnico.}
+    \end{center}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[t]{0.15\textwidth}
+    \begin{center}
+      \textbf{\color{mainblue}
+      05} \\[2mm] {\small\bfseries Revisiones} \\[1mm]
+      {\footnotesize\color{basicgray}Iteramos contigo hasta que cada pixel tenga tu aprobación.}
+    \end{center}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[t]{0.15\textwidth}
+    \begin{center}
+      \textbf{\color{mainblue}
+      06} \\[2mm] {\small\bfseries Entrega} \\[1mm]
+      {\footnotesize\color{basicgray}Entregamos el código fuente. Dominio conectado, SSL activo. Tuya para siempre.}
+    \end{center}
+  \end{minipage}
+
+  \vspace{8mm}
+
+  % =============================================
+  % PLAN DETALLADO
+  % =============================================
+  \section*{Un Solo Plan. Cero Ambigüedad.}
+
+  \vspace{2mm}
+
+  \begin{tcolorbox}
+    [colback=darkslate, colframe=darkslate, arc=3mm, boxrule=0pt, left=6mm, right=6mm,
+    top=5mm, bottom=5mm]
+    \color{white}
+    \begin{minipage}[t]{0.55\textwidth}
+      {\Large\bfseries Plan Landing Page GluonEX} \\[3mm]
+      \begin{tabularx}
+        {\textwidth}{@{}>{\color{successgreen}\centering\arraybackslash}p{1.5em} >{\color{white}\small}X@{}}
+        \faCheckCircle & Diseño a medida (no plantilla) \\[2mm] \faCheckCircle &
+        Hasta 6 secciones / 1 página \\[2mm] \faCheckCircle & Dominio .cl por 1 año
+        \\[2mm] \faCheckCircle & Hosting gratuito (Cloudflare / Netlify) \\[2mm] \faCheckCircle
+        & SEO técnico completo \\[2mm] \faCheckCircle & WhatsApp / Forms / Analytics
+        \\[2mm] \faCheckCircle & Revisiones ilimitadas hasta conformidad \\[2mm] \faCheckCircle
+        & Código fuente 100\% tuyo \\
+      \end{tabularx}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.4\textwidth}
+      \begin{center}
+        {\color{gray}\small ENTREGA · 7--10 DÍAS HÁBILES} \\[3mm] {\color{gray}\small CLP}
+        \\[1mm] {\Huge\bfseries \$119.990} \\[1mm] {\small + IVA · pago único} \\[3mm]
+        {\small\color{gray}IVA (19\%): \$23.798} \\ {\small\color{white}\textbf{Total: \$143.788}}
+        \\[4mm] {\small\color{gray}Confirma y empezamos.} \\ {\small\color{gray}Sin reuniones eternas.}
+      \end{center}
+    \end{minipage}
+  \end{tcolorbox}
+
+  \vspace{3mm}
+
+  % =============================================
+  % FAQ
+  % =============================================
+  \section*{Preguntas Honestas}
+
+  \vspace{2mm}
+
+  \noindent
+  \textbf{\color{darkslate}
+  ¿Cuánto tarda realmente?} \\[1mm]
+  {\small\color{basicgray}Entre 7 y 10 días hábiles dependiendo de la complejidad. No prometemos ``para hoy'' porque priorizamos que el resultado sea perfecto. Te mantenemos informado con avances en tiempo real.}
+
+  \vspace{3mm}
+
+  \noindent
+  \textbf{\color{darkslate}
+  ¿Qué pasa después del primer año?} \\[1mm] {\small\color{basicgray}El dominio .cl lo puedes renovar tú mismo por \$10.000 aprox. El hosting en Cloudflare Pages o Netlify es gratuito. La página es tuya, siempre. Sin mantenciones.}
+
+  \vspace{3mm}
+
+  \noindent
+  \textbf{\color{darkslate}
+  ¿Puedo cambiar de proveedor?} \\[1mm]
+  {\small\color{basicgray}Sí. Entregamos el código fuente completo. Puedes migrar a cualquier hosting o proveedor cuando quieras. No te amarramos a nada.}
+
+  \vspace{3mm}
+
+  \noindent
+  \textbf{\color{darkslate}
+  ¿Recibo el código fuente?} \\[1mm] {\small\color{basicgray}Sí. Todo el código es tuyo. Lo recibes al finalizar el proyecto. Puedes editarlo, contratar a otro desarrollador o hacerlo funcionar donde quieras.}
+
+  \vspace{3mm}
+
+  \noindent
+  \textbf{\color{darkslate}
+  ¿Y si quiero más de una página?} \\[1mm]
+  {\small\color{basicgray}Cada landing adicional tiene un precio preferencial. Cuéntanos qué necesitas y te damos una cotización cerrada.}
+
+  \vspace{3mm}
+
+  \noindent
+  \textbf{\color{darkslate}
+  ¿Puedo editarla después?} \\[1mm] {\small\color{basicgray}Sí. Si está construida con tecnología moderna, puedes editarla tú mismo o contratarnos para cambios puntuales. Sin dependencia absoluta. El código es tuyo.}
+
+  \vspace{3mm}
+
+  \noindent
+  \textbf{\color{darkslate}
+  ¿Facturan con IVA?} \\[1mm]
+  {\small\color{basicgray}Sí. Somos empresa formal. Emitimos factura con IVA desglosado. El precio que ves es + IVA.}
+
+  \vspace{3mm}
+
+  \noindent
+  \textbf{\color{darkslate}
+  ¿Qué incluye ``revisiones hasta que estés conforme''?} \\[1mm] {\small\color{basicgray}Realizamos las revisiones necesarias dentro del alcance definido, hasta que el resultado cumpla con lo acordado.}
+
+  \vspace{8mm}
+
+  % =============================================
+  % CTA FINAL
+  % =============================================
+  \begin{tcolorbox}
+    [colback=darkslate, colframe=darkslate, arc=3mm, boxrule=0pt, left=8mm, right=8mm,
+    top=6mm, bottom=6mm]
+    \color{white}
+    \begin{center}
+      {\Large\bfseries Empezamos hoy mismo.} \\[2mm] {\small Un correo. Una llamada. Una página publicada.}
+      \\[4mm] {\small\color{gray}WhatsApp: \href{https://wa.me/56973789128}{+56 9 7378 9128} · \href{mailto:contacto@gluonex.cl}{contacto@gluonex.cl}}
+      \\[1mm] {\footnotesize\color{gray}Respuesta rápida · Lun a Sáb · 09:00 -- 19:00 CLT}
+    \end{center}
+  \end{tcolorbox}
+
+  \vspace{8mm}
+
+  % =============================================
+  % FOOTER
+  % =============================================
+  \begin{center}
     \color{gray}
-    \small
-    \textbf{GluonEX SpA} \\
-    Concepción, Región del Bío-Bío, Chile \\
-    \href{https://gluonex.cl}{www.gluonex.cl}
-\end{center}
+    \small \textbf{GluonEX SpA} \\ Concepción, Región del Bío-Bío, Chile \\
+    \href{https://gluonex.cl}{www.gluonex.cl} \\[2mm]
+    {\footnotesize © 2026 GluonEX SpA. Todos los derechos reservados.}
+  \end{center}
+
+  \vspace{3mm}
+
+  % =============================================
+  % FLLOTANTE PRECIO
+  % =============================================
+  \begin{tcolorbox}
+    [colback=mainblue, colframe=mainblue, arc=2mm, boxrule=0pt, left=3mm, right=3mm,
+    top=2mm, bottom=2mm]
+    \color{white}
+    \begin{minipage}[t]{0.55\textwidth}
+      {\small\bfseries PLAN ÚNICO · GluonEX} \\[1mm] {\footnotesize\$119.990 + IVA · entrega 7--10 días}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.4\textwidth}
+      \begin{flushright}
+        {\small\bfseries\href{https://gluonex.cl/landingpage}{Quiero mi página}} \faArrowRight
+      \end{flushright}
+    \end{minipage}
+  \end{tcolorbox}
+\end{document}
